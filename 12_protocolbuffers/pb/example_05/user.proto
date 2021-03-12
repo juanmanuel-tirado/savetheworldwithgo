@@ -1,0 +1,13 @@
+syntax = "proto3";
+package user;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_05/user";
+
+import "google/protobuf/any.proto";
+
+message User {
+    string user_id = 1;
+    string email = 2;
+    repeated google.protobuf.Any info = 3;
+}
+

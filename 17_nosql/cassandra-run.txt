@@ -1,0 +1,13 @@
+docker pull spotify/cassandra:cluster
+
+
+python -c ‘print [str(((2**64 / 3) * i) — 2**63) for i in range(3)]’[‘-9223372036854775808’, ‘-3074457345618258603’, ‘3074457345618258602’]
+
+docker run -d -p 9042:9042 -v /var/lib/cassandra/c1:/var/lib/cassandra -e "CASSANDRA_TOKEN=-9223372036854775808" --name c1 spotify/cassandra:cluster
+docker run -d -v /var/lib/cassandra/c2:/var/lib/cassandra -e "CASSANDRA_TOKEN=-3074457345618258603" -e "CASSANDRA_SEEDS=172.17.0.2" --name c2 spotify/cassandra:cluster
+docker run -d -v /var/lib/cassandra/c3:/var/lib/cassandra -e "CASSANDRA_TOKEN=3074457345618258602" -e "CASSANDRA_SEEDS=172.17.0.2" --name c3 spotify/cassandra:cluster
+
+
+docker exec -it c1 /bin/bash
+cqlsh 172.17.0.2
+create keyspace example with replication = {'class' : 'SimpleStrategy', 'replication_factor':1};

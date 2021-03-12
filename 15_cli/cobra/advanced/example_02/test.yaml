@@ -1,0 +1,13 @@
+name: test
+synopsis: Documented test
+description: How to document a command
+usage: test [flags]
+options:
+- name: flag
+  default_value: "true"
+  usage: Some flag
+- name: help
+  shorthand: h
+  default_value: "false"
+  usage: help for test
+example: ./main test

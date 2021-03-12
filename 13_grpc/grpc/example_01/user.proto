@@ -1,0 +1,17 @@
+syntax = "proto3";
+package user;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/grpc/example_01/user";
+
+message User {
+    string user_id = 1;
+    string email = 2;
+}
+
+message UserRequest {
+    string user_id = 1;
+}
+
+service UserService {
+    rpc GetUser (UserRequest) returns (User);
+}

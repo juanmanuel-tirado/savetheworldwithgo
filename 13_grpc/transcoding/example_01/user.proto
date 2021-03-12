@@ -1,0 +1,29 @@
+syntax = "proto3";
+package user;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/transcoding/example_01/user";
+
+import "google/api/annotations.proto";
+
+message User {
+    string user_id = 1;
+    string email = 2;
+}
+
+message UserRequest {
+    string user_id = 1;
+}
+
+service UserService {
+    rpc Get (UserRequest) returns (User) {
+        option(google.api.http) = {
+            get: "/v1/user/{user_id}"
+        };
+    }
+    rpc Create (User) returns (User) {
+        option(google.api.http) = {
+            post: "/v1/user"
+            body: "*"
+        };
+    }
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+package user;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_06/user";
+
+message Developer {
+    string language = 1;
+}
+message Operator {
+    string platform = 1;
+}
+
+message User {
+    string user_id = 1;
+    string email = 2;
+    oneof type {
+        Developer developer = 3;
+        Operator operator = 4;
+    }
+}
+

@@ -1,0 +1,25 @@
+syntax = "proto3";
+package group;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_04/group";
+
+enum Category {
+    DEVELOPER = 0;
+    OPERATOR = 1;
+}
+
+message Group {
+    int32 id = 1;
+    Category category = 2;
+    float score = 3;
+    message User {
+        string user_id = 1;
+        string email = 2;
+    }
+    repeated User users = 4;
+}
+
+message Winner {
+    Group.User user = 1;
+    Category category = 2;
+}

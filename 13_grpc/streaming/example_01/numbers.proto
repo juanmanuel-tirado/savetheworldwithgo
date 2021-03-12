@@ -1,0 +1,19 @@
+syntax = "proto3";
+package numbers;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/streaming/example_01/numbers";
+
+message NumRequest {
+    int64 from = 1;
+    int64 to = 2;
+    int64 n = 3;
+}
+
+message NumResponse {
+    int64 i = 1;
+    int64 remaining = 2;
+}
+
+service NumService {
+    rpc Rnd (NumRequest) returns (stream NumResponse);
+}

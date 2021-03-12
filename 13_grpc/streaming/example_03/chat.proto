@@ -1,0 +1,18 @@
+syntax = "proto3";
+package numbers;
+
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/streaming/example_03/chat";
+
+message ChatRequest {
+    int64 id = 1;
+    int64 to = 2;
+    string txt = 3;
+}
+
+message StatsResponse {
+    int64 total_char = 1;
+}
+
+service ChatService {
+    rpc SendTxt (stream ChatRequest) returns (stream StatsResponse);
+}
