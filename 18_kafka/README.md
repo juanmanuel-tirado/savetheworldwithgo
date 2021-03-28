@@ -1,13 +1,21 @@
 #Kafka
 
-These examples assume a running Kafka instance is available at localhost:9092. You
-can follow the [official guide](https://docs.confluent.io/platform/current/quickstart/ce-docker-quickstart.html#ce-docker-quickstart)  to have a running Kafka deployment.
+These examples assume Kafka instance is running and it is  available at 
+`localhost:9092`. You can follow the 
+the [official guide](https://docs.confluent.io/platform/current/quickstart/ce-docker-quickstart.html#ce-docker-quickstart) 
+to have a basic Kafka deployment in containers.
 
-A minimal Docker compose is provided in this folder for testing. Run
+A minimal Docker compose file is provided here. Notice that only the services
+required by the examples are deployed in the provided Docker compose file. To
+start the environment run:
+
 ```
 docker-compose up -d
 ```
-to initialize the required containers and check that they are up and running with
+
+This will start the containers and check all the dependencies. All the containers
+must be up and ready to have a working environment. In order to check that 
+everything is ready you can run:
 ```
 docker ps
 CONTAINER ID   IMAGE                                   COMMAND                  CREATED        STATUS       PORTS                                            NAMES
