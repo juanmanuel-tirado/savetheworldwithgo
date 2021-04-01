@@ -17,7 +17,7 @@ under the Apache License. Feel free to fork this repo or to take
 a look to any specific topic you may find relevant. The examples are 
 not explained in the code basically because all the explanations are
 given in the book. If you are interested in the book you can purchase
-it at [Amazon](XXXXXXXXXXX).
+it in [Amazon](https://www.amazon.com/dp/B091FX4CZX).
 
 # Organization
 

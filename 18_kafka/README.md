@@ -1,4 +1,4 @@
-#Kafka
+# Kafka
 
 These examples assume Kafka instance is running and it is  available at 
 `localhost:9092`. You can follow the 
