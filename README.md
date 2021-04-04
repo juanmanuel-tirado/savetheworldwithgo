@@ -1,4 +1,4 @@
-![Build systems with GO](img/buildsystems.svg)
+![Build systems with GO](img/buildsystems.png)
 
 # What is this?
 
