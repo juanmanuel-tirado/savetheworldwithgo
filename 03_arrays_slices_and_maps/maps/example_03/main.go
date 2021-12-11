@@ -12,6 +12,6 @@ func main(){
 
     fmt.Println("Month\tSales")
     for month, sale := range sales {
-        fmt.Printf("%s\t\t%d\n",month,sale)
+        fmt.Printf("%s\t%d\n",month,sale)
     }
 }
