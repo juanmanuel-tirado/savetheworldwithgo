@@ -1,7 +1,7 @@
 syntax = "proto3";
 package user;
 
-option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/interceptors/example_02/user";
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/15_grpc/interceptors/example_02/user";
 
 message User {
     string user_id = 1;

@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/17_nosql/gocql/udts/example_01
+module github.com/juanmanuel-tirado/savetheworldwithgo/19_nosql/gocql/udts/example_01
 
 go 1.15
 

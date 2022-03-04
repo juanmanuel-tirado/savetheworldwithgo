@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/16_sql/gorm/transactions/example_02
+module github.com/juanmanuel-tirado/savetheworldwithgo/18_sql/gorm/transactions/example_02
 
 go 1.15
 

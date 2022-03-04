@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/juanmanuel-tirado/savetheworldwithgo/15_cli/cobra/advanced/example_03/cmd"
+import "github.com/juanmanuel-tirado/savetheworldwithgo/17_cli/cobra/advanced/example_03/cmd"
 
 func main() {
 	cmd.Execute()

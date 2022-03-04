@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_04
+module github.com/juanmanuel-tirado/savetheworldwithgo/14_protocolbuffers/pb/example_04
 
 go 1.15
 

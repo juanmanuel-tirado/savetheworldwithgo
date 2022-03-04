@@ -8,7 +8,7 @@ package group
 
 import (
 	proto "github.com/golang/protobuf/proto"
-	user "github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_03/user"
+	user "github.com/juanmanuel-tirado/savetheworldwithgo/14_protocolbuffers/pb/example_03/user"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

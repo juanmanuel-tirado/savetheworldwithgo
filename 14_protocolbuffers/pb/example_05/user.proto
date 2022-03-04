@@ -1,7 +1,7 @@
 syntax = "proto3";
 package user;
 
-option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_05/user";
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/14_protocolbuffers/pb/example_05/user";
 
 import "google/protobuf/any.proto";
 
