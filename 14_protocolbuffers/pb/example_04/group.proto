@@ -1,7 +1,7 @@
 syntax = "proto3";
 package group;
 
-option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/12_protocolbuffers/pb/example_04/group";
+option go_package="github.com/juanmanuel-tirado/savetheworldwithgo/14_protocolbuffers/pb/example_04/group";
 
 enum Category {
     DEVELOPER = 0;

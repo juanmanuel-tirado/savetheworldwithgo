@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/transcoding/example_01
+module github.com/juanmanuel-tirado/savetheworldwithgo/15_grpc/transcoding/example_01
 
 go 1.15
 

@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/14_logger/zerolog/basics/example_05
+module github.com/juanmanuel-tirado/savetheworldwithgo/16_logger/zerolog/basics/example_05
 
 go 1.15
 

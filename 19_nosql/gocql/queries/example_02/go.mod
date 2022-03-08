@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/17_nosql/gocql/queries/example_02
+module github.com/juanmanuel-tirado/savetheworldwithgo/19_nosql/gocql/queries/example_02
 
 go 1.15
 

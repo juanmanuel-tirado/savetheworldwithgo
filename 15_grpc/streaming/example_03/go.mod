@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/13_grpc/streaming/example_03
+module github.com/juanmanuel-tirado/savetheworldwithgo/15_grpc/streaming/example_03
 
 go 1.15
 

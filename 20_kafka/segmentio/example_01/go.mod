@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/18_kafka/kafka-go/example_01
+module github.com/juanmanuel-tirado/savetheworldwithgo/20_kafka/kafka-go/example_01
 
 go 1.15
 

@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/18_kafka/confluent/example_02
+module github.com/juanmanuel-tirado/savetheworldwithgo/20_kafka/confluent/example_02
 
 go 1.15
 
